@@ -95,6 +95,35 @@ a:hover{text-decoration: none;}
   position: relative;
   margin-bottom: 20px;
   box-shadow:  0px 0px 5px 0 rgb(112, 112, 112);
+  animation: bounce  5s infinite linear;
+  border: 1px solid blue;
+}
+
+@keyframes bounce {
+  from {
+    border-color: blue;
+    box-shadow: 0 0 20px blue;
+  }
+  20% {
+    border-color: lime;
+    box-shadow: 0 0 20px lime;
+  }
+  40% {
+    border-color: yellow;
+    box-shadow: 0 0 20px yellow;
+  }
+  60% {
+    border-color: orange;
+    box-shadow: 0 0 20px orange;
+  }
+  80% {
+    border-color: pink;
+    box-shadow: 0 0 20px pink;
+  }
+  to {
+    border-color: blue;
+    box-shadow: 0 0 20px blue;
+  }
 }
 .user__img img:hover{
   transform: scale(1.1);
